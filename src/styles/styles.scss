@@ -1,5 +1,51 @@
 @import "bootstrap";
 
-body {
-	background: red;
+$bbc-red-color: #bb1919;
+
+$container-container-width-squeeze: 10%;
+
+.masthead {
+	height: 100px;
+	background-color: $bbc-red-color;
+}
+
+.content-container {
+	width: 100% - ($container-container-width-squeeze * 2);
+	margin: 0 auto;
+}
+
+.section-label {
+	color: $bbc-red-color;
+}
+
+.masthead {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.lead-img {
+	margin-left: -$container-container-width-squeeze;
+	margin-right: -$container-container-width-squeeze;
+}
+
+img {
+	@extend .mt-3;
+	@extend .mb-3;
+	width: 100%;
+}
+
+.explainer-img {
+	margin-left: -60%;
+	margin-right: -60%;
+
+	img {
+		max-height: 600px;
+	}
+}
+
+.explainer-title {
+	margin-top: -130px;
+	color: white;
 }
