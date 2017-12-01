@@ -42,10 +42,28 @@ img {
 
 	img {
 		max-height: 600px;
+		object-fit: cover;
 	}
 }
 
 .explainer-title {
 	margin-top: -130px;
 	color: white;
+}
+
+
+.title {
+  font-size: 28px;
+}
+
+@include media-breakpoint-up(md) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .title {
+    font-size: 44px;
+  }
 }
