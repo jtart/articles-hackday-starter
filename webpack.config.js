@@ -1,6 +1,7 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: './src/js/index.js',
@@ -22,10 +23,16 @@ module.exports = {
 			test: /\.scss$/,
 			use: ExtractTextPlugin.extract({
 				fallback: "style-loader",
-				use: [
-					'css-loader',
-					'sass-loader'
-				]
+				use: [{
+					loader: 'css-loader'
+				}, {
+					loader: 'sass-loader',
+					options: {
+						includePaths: [
+					        path.resolve(__dirname, 'node_modules/bootstrap/scss/'),
+					    ]
+					}
+				}]
 			})
 		}]
 	},
@@ -37,6 +44,12 @@ module.exports = {
 			filename: 'styles/styles.bundle.css',
 			disable: false,
 			allChunks: true
+		}),
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery',
+			'window.jQuery': 'jquery',
+			Popper: ['popper.js', 'default']
 		})
 	],
 	devServer: {
