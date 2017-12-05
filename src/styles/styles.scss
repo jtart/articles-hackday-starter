@@ -69,7 +69,17 @@ img {
 }
 
 .sticky-header {
-    padding: 5px;
+    padding: 24px 24px 8px;
 	background-color: #EDEDED;
-    width: 50%;
+    position: fixed;
+    top: 18%;
+    left: 2%;
+
+    h2 {
+        font-size: 19px;
+    }
+
+    ul {
+        padding: 0 0 0 20px;
+    }
 }
