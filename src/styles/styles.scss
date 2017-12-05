@@ -10,8 +10,14 @@ $container-container-width-squeeze: 10%;
 }
 
 .content-container {
-	width: 85% - ($container-container-width-squeeze * 2);
-	margin: 0 auto;
+    width: 100% - ($container-container-width-squeeze * 0);
+    margin: 0 auto;
+}
+
+@include media-breakpoint-up(lg) {
+    .content-container {
+        width: 85% - ($container-container-width-squeeze * 2);
+    }
 }
 
 .section-label {
