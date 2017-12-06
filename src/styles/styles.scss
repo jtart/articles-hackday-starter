@@ -194,6 +194,14 @@ img {
     }
 }
 
+.hide {
+    display: none;
+}
+
+.media-container {
+    background-color: #ededed;
+}
+
 .sticky-header.open {
     .sticky-header__show-media {
         margin: 0;

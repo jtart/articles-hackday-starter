@@ -24,8 +24,8 @@
 			<div class="container mt-4 content">
 				<div class="content-container">
 					<h1 id="northern-ireland" class="title font-weight-bold mb-3">Northern Ireland and England schools in global top 10 for reading</h1>
-					<div class="sticky-header">
-						<button>
+					<div id="sticky-header" class="sticky-header">
+						<button id="button">
                         	<div class="drawer-icon">
                            		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve"><g id="Grid"></g>
 								<g id="Layer_2">
@@ -47,21 +47,24 @@
 								<li><a href="#girls">Girls ahead of boys</a></li>
 							</ul>
 
+							<div class="media-container">
                             <p class="sticky-header__show-media">Show media</p>
 							<ul class="media">
     							<li>
-									<input type="checkbox" id="text" name="text" value="text" checked>
+									<input type="checkbox" id="text-checkbox" name="text" value="text" checked>
     								<label for="text">Text</label>
     							</li>
 								<li>
-									<input type="checkbox" id="images" name="images" value="images" checked>
+									<input type="checkbox" id="images-checkbox" name="images" value="images">
     								<label for="images">Images</label>
     							</li>
     							<li>
-									<input type="checkbox" id="video" name="video" value="video" checked>
+									<input type="checkbox" id="video-checkbox" name="video" value="video">
     								<label for="video">Video</label>
     							</li>
 							</ul>
+							</div>
+							
 							<p class="note">Note the article introduction will always been shown whatever the media.
 							<input type="checkbox" id="remember" name="remember" value="remember" checked>
     						<label for="remember">Remember my choice</label>.</p>
@@ -92,7 +95,7 @@
 					<p>The result puts them only marginally behind long-standing high achievers such as Finland.</p>
 					</div>
 					
-					<div class="video">
+					<div class="video hide">
 					<iframe width="100%" height="315" src="https://www.youtube.com/embed/loFL5gT_m8I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 					</div>
 
@@ -102,7 +105,7 @@
 					<p>There are no Sats tests for 11-year-olds in Northern Ireland, but pupils in the last year of primary can take transfer tests for grammar schools. It's also a system in which many places are allocated on the basis of religious faith.</p><p>The National Foundation for Educational Research, which administered the tests in Northern Ireland, says families and local communities seemed to put a "high value on academic success".</p><p>Senior research manager Juliet Sizmur said the international comparison suggested that reading was particularly valued in Northern Ireland.</p>
 					</div>
 					
-					<div class="image">
+					<div class="image hide">
 					<figure class="media-landscape no-caption full-width">
             			<span class="image-and-copyright-container">
 	               	 		<img src="https://ichef-1.bbci.co.uk/news/624/cpsprodpb/5EC0/production/_99065242_reading_trends_v3-640-nc.png" datasrc="https://ichef-1.bbci.co.uk/news/320/cpsprodpb/5EC0/production/_99065242_reading_trends_v3-640-nc.png" class="youtube-video responsive-image__img js-image-replace" alt="Graph" height="520" data-highest-encountered-width="624">
@@ -147,7 +150,7 @@
         			<p>He says there are increasing numbers of children in pre-school education - and this seems to be linked to higher performance.</p>
         			</div>
         			
-        			<div class="image">
+        			<div class="image hide">
         			<figure class="media-landscape has-caption full-width">
             			<span class="image-and-copyright-container">
                 			<img src="https://ichef.bbci.co.uk/news/624/cpsprodpb/F659/production/_99056036_russia.jpg" datasrc="https://ichef.bbci.co.uk/news/320/cpsprodpb/F659/production/_99056036_russia.jpg" alt="Russia education">
