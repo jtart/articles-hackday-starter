@@ -26,10 +26,10 @@ $('#video-checkbox').change(function() {
 
 $('#social-checkbox').change(function() {
     // this will contain a reference to the checkbox   
-    $('.video').toggleClass('hide'); 
+    $('.social').toggleClass('hide'); 
 });
 
 $('#infographics-checkbox').change(function() {
     // this will contain a reference to the checkbox   
-    $('.video').toggleClass('hide'); 
+    $('.infographics').toggleClass('hide'); 
 });
