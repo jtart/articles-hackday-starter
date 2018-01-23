@@ -5,6 +5,6 @@ Uses Webpack to bundle JS and SASS, and a Webpack Dev Server with hot reloading.
 ### Usage
 
 1. Clone this repo
-2. Install node modules: `yarn install` or `npm install`
-3. Start the Webpack dev server: `yarn run dev` or `npm run dev`
-4. View `/explainer.html`, `/feature.html` or `/index.html` (standard)
+2. Install node modules: `yarn install`
+3. Start the Webpack dev server: `yarn run dev`
+4. View `/index.html`
