@@ -38,7 +38,7 @@ module.exports = {
 	},
 	plugins: [
 		new HTMLWebpackPlugin({
-			template: "./src/standard.html"
+			template: "./src/index.html"
 		}),
 		new ExtractTextPlugin({
 			filename: 'styles/styles.bundle.css',
