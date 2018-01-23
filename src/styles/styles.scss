@@ -2,16 +2,9 @@
 
 $bbc-red-color: #bb1919;
 
-$container-container-width-squeeze: 10%;
-
 .masthead {
 	height: 100px;
 	background-color: $bbc-red-color;
-}
-
-.content-container {
-	width: 100% - ($container-container-width-squeeze * 2);
-	margin: 0 auto;
 }
 
 .section-label {
@@ -25,17 +18,10 @@ $container-container-width-squeeze: 10%;
     flex-direction: column;
 }
 
-.lead-img {
-	margin-left: -$container-container-width-squeeze;
-	margin-right: -$container-container-width-squeeze;
-}
-
 img {
-	@extend .mt-3;
 	@extend .mb-3;
 	width: 100%;
 }
-
 
 .title {
   font-size: 28px;
