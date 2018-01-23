@@ -7,4 +7,4 @@ Uses Webpack to bundle JS and SASS, and a Webpack Dev Server with hot reloading.
 1. Clone this repo
 2. Install node modules: `yarn install`
 3. Start the Webpack dev server: `yarn run dev`
-4. View `/index.html`
+4. View `http://localhost:8080/`
